@@ -43,7 +43,9 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                        <li class="active"><a href="{{ url('home') }}">Home</a></li>
+                        <li class=""><a href="{{ url('home') }}">Courses</a></li>
+                        <li class=""><a href="{{ url('home') }}">Academics</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
