@@ -43,9 +43,10 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="{{ url('home') }}">Home</a></li>
-                        <li class=""><a href="{{ url('home') }}">Courses</a></li>
-                        <li class=""><a href="{{ url('home') }}">Academics</a></li>
+                        <li class="{{ 'welcome' === Route::currentRouteName() ? 'active' : '' }}"><a href="{{ url('/') }}">Welcome</a></li>
+                        <li class="{{ 'tabs.index' === Route::currentRouteName() ? 'active' : '' }}"><a href="{{ url('dashboard') }}">Dashboard</a></li>
+                        <li class="{{ 'tabs.courses' === Route::currentRouteName() ? 'active' : '' }}"><a href="{{ route('tabs.courses') }}">Courses</a></li>
+                        <li class="{{ 'tabs.exams' === Route::currentRouteName() ? 'active' : '' }}"><a href="{{ route('tabs.exams') }}">Academic record</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -85,5 +86,6 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script src="https://use.fontawesome.com/6e2723d564.js"></script>
 </body>
 </html>
