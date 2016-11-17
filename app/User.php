@@ -31,5 +31,9 @@ class User extends Authenticatable
         return Course::all();
     }
 
+    function scores(){
+        return $this->hasMany(Score::class);
+    }
+
 
 }
