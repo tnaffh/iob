@@ -17,7 +17,7 @@ class CreateScoresTable extends Migration
             $table->increments('id');
             $table->integer('user_id');
             $table->integer('examination_id');
-            $table->decimal('score',0);
+            $table->decimal('score');
             $table->timestamps();
         });
     }
